@@ -22,5 +22,6 @@ export default {
 </script>
 
 <style lang="scss">
-
+    @import "./assets/scss/common.scss";
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 </style>
