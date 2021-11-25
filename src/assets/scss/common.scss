@@ -64,9 +64,9 @@ $site_blue: #21333e;
             color: #e3e7df; 
             padding: 0 1rem;  
             border-radius: 3px;
+            background-color: #038483;
 
             &:hover{
-                background-color: #038483;
                 cursor: pointer;
             }
         }
@@ -196,6 +196,55 @@ $site_blue: #21333e;
                     }
                 }
             }
+        }
+
+        .cards-1-container{
+            background-color: #e3e7df;
+            display: flex;
+            justify-content: center;
+            color: black;
+            padding: 3rem 0;
+            
+            .cards-centered{
+                width: 75%;
+                display: flex;
+
+                .card{
+                    background-color: #ffffff;
+                    width: calc(100% / 3);
+                    padding: 2rem;
+                    margin: 0 0.5rem;
+                    border-radius: 5px;
+
+                    h2{
+                        margin: 1.5rem 0;
+                    }
+
+                    .card-icon{
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        text-align: center;
+                        line-height: 70px;
+
+                        .icon-bg{
+                            background-color: #72a2a3;
+                            filter: opacity(0.5);
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+
+                        i{
+                            color: #39c4c6;
+                            padding: 1rem;
+                        }
+                    }    
+                }
+            }
+
+            
         }
     }
 }
