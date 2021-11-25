@@ -7,7 +7,7 @@
             </div>
             <div class="right-contacts">
                 <div class="phone-number">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fas fa-phone-alt"></i>
                     <p>+1 (305) 1234-5678</p>
                 </div>
                 <div class="mail-contact">

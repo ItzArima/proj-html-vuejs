@@ -252,9 +252,87 @@ $site_blue: #21333e;
 
         .about-container{
             display: flex;
+            align-items: center;
 
             .about-left{
                 width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: right;
+
+                .about-content{
+                    width: 75%;
+                    .green{
+                        color: #038483;
+                        margin-bottom: 1rem;
+                    }
+
+                    .about-title{
+                        display: flex;
+                        margin-bottom: 1rem;
+
+                        .title-left{
+                            position: relative;
+                            color: #038483;
+
+                            .title-bg{
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                background-color: #038483;
+                                filter: opacity(0.3);
+                                border-radius: 3px;
+                            }
+                            
+                            h1{
+                                padding: 0 0.5rem;
+                            }
+                        }
+
+                        .title-right{
+                            color: #1e2223;
+                        }
+                    }
+                    
+                    .about-text{
+                        color: #778a94;
+                        margin-bottom: 3rem;
+                    }
+
+                    .about-cards{
+                        color: #778a94;
+
+                        .row{
+                            display: flex;
+                            margin-bottom: 3rem;
+
+                            .card{
+                                width: 50%;
+                                padding-right: 1rem 0;
+
+                                .card-title{
+                                    display: flex;
+                                    align-items: center;
+
+                                    h2{
+                                        font-weight: 900;
+                                        margin-left: 0.5rem;
+                                        color: #1e2223;
+                                    }
+                                }
+
+                                i{
+                                    color: #038483;
+                                }
+
+                                p{
+                                    margin: 2rem 0
+                                };
+                            }
+                        }
+
+                    }
+                }
             }
 
             .about-right{
