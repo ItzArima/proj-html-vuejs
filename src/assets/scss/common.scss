@@ -9,9 +9,10 @@ $site_blue: #21333e;
 }
 
 #app{
+
     .header-container{
         background-color: $site_blue;
-        color: #c0c3d0;
+        color: #e3e7df;
         height: 30px;
         line-height: 30px;
         display: flex;
@@ -38,7 +39,7 @@ $site_blue: #21333e;
                 }
 
                 .social-pages{
-                    
+                    margin-right: 0;
                     i{
                         margin: 0 1rem;
                     }
@@ -47,6 +48,95 @@ $site_blue: #21333e;
 
             i{
                 margin: 0 0.5rem;
+            }
+        }
+    }
+
+    .main-container{
+        color: #e3e7df;
+
+        .hero-container{
+            height: calc(100vh - 30px);
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .hero-image{
+                position: absolute;
+                filter: brightness(0.4);
+                height: 100%;
+                width: 100%;
+                img{
+                    object-fit: cover;
+                    object-position: bottom;
+                    max-height: 100%;
+                    min-width: 100%
+                }
+            }
+
+            .nav-container{
+                display: flex;
+                justify-content: space-between;
+                width: 75%;
+                height: 50px;
+                z-index: 1;
+                align-items: center;
+                margin: 1rem 0;
+
+                .nav-left{
+                    .logo-container{
+                        display: flex;
+                        font-weight: 900;
+                        align-items: center;
+
+                        .left-logo{
+                            color: #038483;
+                            position: relative;
+                            display: flex;
+                            padding-left: 1rem;
+                            
+                            .background-logo{
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                background-color: #038483;
+                                filter: opacity(0.3);
+                                left: 0;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .nav-right{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    a{
+                        text-decoration: none;
+                        color: #e3e7df;
+                        padding: 0 1rem;
+                        font-weight: 900;
+                    }
+
+                    button{
+                        height: 100%;
+                        border: 0;
+                        font-weight: 900;
+                        background-color: transparent;
+                        font-size: medium;
+                        color: #e3e7df; 
+                        padding: 0 1rem;  
+                        border-radius: 3px;
+
+                        &:hover{
+                            background-color: #038483;
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }
