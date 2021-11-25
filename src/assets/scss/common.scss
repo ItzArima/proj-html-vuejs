@@ -193,6 +193,11 @@ $site_blue: #21333e;
 
                     .border{
                         border: 2px solid #038483;
+                        background-color: transparent;
+
+                        &:hover{
+                            background-color: #038483;
+                        }
                     }
                 }
             }
@@ -243,8 +248,24 @@ $site_blue: #21333e;
                     }    
                 }
             }
+        }
 
-            
+        .about-container{
+            display: flex;
+
+            .about-left{
+                width: 50%;
+            }
+
+            .about-right{
+                width: 50%;
+                height: 100%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
     }
 }
