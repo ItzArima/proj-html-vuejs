@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="about-right">
-            <img src="../assets/img/about-3.jpg" alt="">
+            
         </div>
     </div>
 </template>

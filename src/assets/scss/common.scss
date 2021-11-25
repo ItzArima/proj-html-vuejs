@@ -62,9 +62,10 @@ $site_blue: #21333e;
             background-color: transparent;
             font-size: medium;
             color: #e3e7df; 
-            padding: 0 1rem;  
+            padding: 1rem;  
             border-radius: 3px;
             background-color: #038483;
+            line-height: 100%;
 
             &:hover{
                 cursor: pointer;
@@ -252,13 +253,14 @@ $site_blue: #21333e;
 
         .about-container{
             display: flex;
-            align-items: center;
+            position: relative;
 
             .about-left{
                 width: 50%;
                 height: 100%;
                 display: flex;
                 justify-content: right;
+                padding: 5rem 0;
 
                 .about-content{
                     width: 75%;
@@ -304,7 +306,7 @@ $site_blue: #21333e;
 
                         .row{
                             display: flex;
-                            margin-bottom: 3rem;
+                            margin-bottom: 2rem;
 
                             .card{
                                 width: 50%;
@@ -337,11 +339,69 @@ $site_blue: #21333e;
 
             .about-right{
                 width: 50%;
-                height: 100%;
+                background-image: url('./assets/img/about-3.jpg');
+                background-position: center;
+                padding: 5rem 0;
+                background-size: cover;
+            }
+        }
 
-                img{
-                    height: 100%;
-                    width: 100%;
+        .business-container{
+            display: flex;
+            justify-content: center;
+            background-color: #121117;
+
+            .business-centered{
+                width: 75%;
+
+                .green{
+                    color: #038483;
+                    margin-bottom: 2rem;
+                }
+
+                .business-title{
+                    display: flex;
+                    margin-bottom: 2rem;
+
+                    h1{
+                        color: #ffffff;
+                    }
+
+                    .title-right{
+                        position: relative;
+                        width: 135px;
+                        display: flex;
+                        justify-content: center;
+
+                        h1{
+                            position: absolute;
+                            top: 0;
+                            text-align: center;                   
+                            z-index: 2;
+                        }
+
+                        .title-bg{
+                            height: 100%;
+                            width: 100%;
+                            background-color: #038483;
+                            filter: opacity(0.3);
+                        }
+                    }
+                }
+
+                .business-text{
+                    display: flex;
+                    margin-bottom: 2rem;
+                    
+                    p{
+                        width: 80%;
+                    }
+
+                    .btn{
+                        background-color: transparent;
+                        border: 2px solid #038483;
+                        border-radius: 3px;
+                    }
                 }
             }
         }
