@@ -18,15 +18,45 @@
                 <button class="btn">SEE ALL</button>
             </div>
             <div class="business-cards">
-                <div class="row">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                <div class="row margin-bottom">
+                    <div class="card">
+                        <i class="fas fa-network-wired fa-2x"></i>
+                        <h2>Audit & Assurance</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
+                    <div class="card middle">
+                        <i class="fas fa-briefcase fa-2x"></i>
+                        <h2>Financial Advisory</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
+                    <div class="card">
+                        <i class="far fa-chart-bar fa-2x"></i>
+                        <h2>Analytics and M&A</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card">
+                        <i class="fas fa-plane fa-2x"></i>
+                        <h2>Middle Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
+                    <div class="card middle">
+                        <i class="fas fa-globe-europe fa-2x"></i>
+                        <h2>Legal Consulting</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-hdd fa-2x"></i>
+                        <h2>Regulatory Risk</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
                 </div>
             </div>
         </div>    

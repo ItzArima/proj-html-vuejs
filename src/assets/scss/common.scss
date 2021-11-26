@@ -56,13 +56,12 @@ $site_blue: #21333e;
         color: #e3e7df;
 
         .btn{
-            height: 100%;
             border: 0;
             font-weight: 900;
             background-color: transparent;
             font-size: medium;
             color: #e3e7df; 
-            padding: 1rem;  
+            padding: 0.5rem 1rem;  
             border-radius: 3px;
             background-color: #038483;
             line-height: 100%;
@@ -350,13 +349,14 @@ $site_blue: #21333e;
             display: flex;
             justify-content: center;
             background-color: #121117;
+            padding: 5rem 0;
 
             .business-centered{
                 width: 75%;
 
                 .green{
                     color: #038483;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                 }
 
                 .business-title{
@@ -392,15 +392,60 @@ $site_blue: #21333e;
                 .business-text{
                     display: flex;
                     margin-bottom: 2rem;
+                    justify-content: space-between;
                     
                     p{
-                        width: 80%;
+                        width: 70%;
                     }
 
                     .btn{
                         background-color: transparent;
                         border: 2px solid #038483;
                         border-radius: 3px;
+                    }
+                }
+
+                .business-cards{
+
+                    .margin-bottom{
+                        margin-bottom: 2rem;
+                    }
+
+                    .row{
+                        display: flex;
+
+                        .middle{
+                            margin: 0 2rem;
+                        }
+
+                        .card{
+                            width: calc(100% / 3);
+                            background-color: #1e2223;
+                            padding: 3rem;
+                            border-radius: 7px;
+
+                            i{
+                                color: #038483;
+                                margin-bottom: 1.5rem;
+                            }
+
+                            h2{
+                                margin-bottom: 1.5rem;
+                            }
+
+                            p{
+                                margin-bottom: 1.5rem;
+                            }
+
+                            .btn{
+                                background-color: transparent;
+                                border: 2px solid #038483;
+
+                                &:hover{
+                                    background-color: #038483;
+                                }
+                            }
+                        }
                     }
                 }
             }
