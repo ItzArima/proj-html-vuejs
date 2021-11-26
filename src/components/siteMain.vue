@@ -5,6 +5,8 @@
         <aboutNetwork />
         <businessArea />
         <pricing />
+        <news />
+        <newsletter />
     </div>
 </template>
 
@@ -13,7 +15,10 @@ import hero from './hero.vue'
 import cards1 from './cards-1.vue'
 import aboutNetwork from './aboutNetwork.vue'
 import businessArea from './businessArea.vue'
-import Pricing from './pricing.vue'
+import pricing from './pricing.vue'
+import news from './news.vue'
+import newsletter from './newsletter.vue'
+
 export default {
     name: "siteMain",
 
@@ -22,7 +27,9 @@ export default {
         cards1,
         aboutNetwork,
         businessArea,
-        Pricing
+        pricing,
+        news,
+        newsletter
     }
 };
 </script>
