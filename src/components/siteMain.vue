@@ -1,12 +1,16 @@
 <template>
     <div class="main-container">
-        <hero />
-        <cards1 />
-        <aboutNetwork />
-        <businessArea />
-        <pricing />
-        <news />
-        <newsletter />
+        <stickyHeader />
+        <div class="site-content">
+            <hero />
+            <cards1 />
+            <aboutNetwork />
+            <businessArea />
+            <pricing />
+            <news />
+            <newsletter />
+            <message />
+        </div>    
     </div>
 </template>
 
@@ -18,6 +22,8 @@ import businessArea from './businessArea.vue'
 import pricing from './pricing.vue'
 import news from './news.vue'
 import newsletter from './newsletter.vue'
+import message from './message.vue'
+import stickyHeader from './stickyHeader.vue'
 
 export default {
     name: "siteMain",
@@ -29,10 +35,11 @@ export default {
         businessArea,
         pricing,
         news,
-        newsletter
-    }
+        newsletter,
+        message,
+        stickyHeader
+    },
+
 };
 </script>
 
-<style>
-</style>

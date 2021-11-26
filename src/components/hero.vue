@@ -1,33 +1,14 @@
 <template>
     <div class="hero-container">
-        <div class="hero-image">
-            <img src="../assets/img/hero-image.png" alt="">
-        </div>
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="logo-container">
-                    <div class="left-logo">
-                        <div class="background-logo"></div>
-                        <h1>NEX</h1>
-                    </div>
-                    <div class="right-logo">
-                        <h1>GEN</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-right">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="">SERVICES</a>
-                <a href="">PRICING</a>
-                <a href="">BLOG</a>
-                <button class="btn">GET IN TOUCH</button>
-            </div>    
+        <div class="hero-video">
+            <video autoplay loop muted>
+                <source src="../assets/video/city.mp4" type="video/mp4">
+            </video>
         </div>
         <div class="hero-content">
             <div class="title">
                 <h1>Lead</h1>
-                <h1 class="space">-</h1>
+                <h1 class="space">~</h1>
                 <div class="customer-container">
                     <div class="customer-bg"></div>
                     <h1>Customer</h1>
@@ -47,7 +28,8 @@
 
 <script>
 export default {
-    name : 'hero'
+    name : 'hero',
+
 }
 </script>
 

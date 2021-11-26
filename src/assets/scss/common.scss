@@ -1,18 +1,32 @@
 $site_black: #21333e;
 $site_green: #41c457;
 
+.nav_colored{
+    background-color: #208531 !important;
+}
 
+
+
+#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
 }
 
 #app{
 
     .header-container{
-        background-color: $site_black;
+        background-color: $site_green;
         color: #e3e7df;
         height: 30px;
         line-height: 30px;
@@ -55,6 +69,12 @@ $site_green: #41c457;
 
     .main-container{
         color: #e3e7df;
+        position: relative;
+
+        .site-content{
+            position: relative;
+            top: -82px;
+        }
 
         .btn{
             border: 0;
@@ -72,24 +92,15 @@ $site_green: #41c457;
             }
         }
 
-        .hero-container{
-            height: calc(100vh - 30px);
+        .stickyheader-container{
             display: flex;
             justify-content: center;
-            position: relative;
-
-            .hero-image{
-                position: absolute;
-                filter: brightness(0.4);
-                height: 100%;
-                width: 100%;
-                img{
-                    object-fit: cover;
-                    object-position: bottom;
-                    max-height: 100%;
-                    min-width: 100%
-                }
-            }
+            position: sticky;
+            top: -1px;
+            z-index: 3;
+            width: 100%;
+            transition: all 0.3s;
+            background-color: transparent;
 
             .nav-container{
                 display: flex;
@@ -101,6 +112,7 @@ $site_green: #41c457;
                 margin: 1rem 0;
 
                 .nav-left{
+
                     .logo-container{
                         display: flex;
                         font-weight: 900;
@@ -140,6 +152,27 @@ $site_green: #41c457;
                     }
                 }
             }
+        }
+
+        .hero-container{
+            height: calc(100vh - 30px);
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .hero-video{
+                position: absolute;
+                filter: brightness(0.4);
+                height: 100%;
+                width: 100%;
+                video{
+                    object-fit: cover;
+                    object-position: bottom;
+                    max-height: 100%;
+                    min-width: 100%
+                }
+            }
+
             .hero-content{
                 position: absolute;
                 top: 35%;
@@ -158,7 +191,8 @@ $site_green: #41c457;
                     font-size: x-large;
                     
                     .space{
-                        margin: 0 1rem;
+                        margin-left:1rem;
+                        margin-right: 0.5rem;
                     }
 
                     .customer-container{
@@ -234,7 +268,7 @@ $site_green: #41c457;
                         line-height: 70px;
 
                         .icon-bg{
-                            background-color: #72a2a3;
+                            background-color: $site_green;
                             filter: opacity(0.5);
                             position: absolute;
                             height: 100%;
@@ -317,7 +351,6 @@ $site_green: #41c457;
                                     align-items: center;
 
                                     h2{
-                                        font-weight: 900;
                                         margin-left: 0.5rem;
                                         color: #1e2223;
                                     }
@@ -370,22 +403,25 @@ $site_green: #41c457;
 
                     .title-right{
                         position: relative;
-                        width: 135px;
-                        display: flex;
-                        justify-content: center;
-
-                        h1{
-                            position: absolute;
-                            top: 0;
-                            text-align: center;                   
-                            z-index: 2;
-                        }
-
+                        padding: 0 0.5rem;
                         .title-bg{
                             height: 100%;
                             width: 100%;
                             background-color: $site_green;
                             filter: opacity(0.3);
+                        }
+
+                        .hidden{
+                            visibility: hidden;
+                            position: relative;
+                            top: 0;
+                            padding: 0 0.5rem;
+                        }
+
+                        .absolute{
+                            position: absolute;
+                            top: 0;
+                            padding-left: 0.5rem;
                         }
                     }
                 }
@@ -467,7 +503,7 @@ $site_green: #41c457;
                 
                 .pricing-content{
                     text-align: center;
-                    width: 50%;
+                    width: 75%;
 
                     .green{
                         color: $site_green;
@@ -500,7 +536,7 @@ $site_green: #41c457;
                                 position: absolute;
                                 top: 0;
                                 color: $site_green;
-                                right: 1rem;
+                                padding-left: 0.5rem;
                             }
                         }
 
@@ -592,6 +628,7 @@ $site_green: #41c457;
                             border-top-right-radius: 30px;
                             border-bottom-right-radius: 30px;
                             font-weight: 900;
+                            color: white;
                         }
                     }
                 }
@@ -691,6 +728,9 @@ $site_green: #41c457;
             justify-content: center;
             background-image: url('./assets/img/bg-1.jpg');
             padding: 5rem 0;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
 
             .newsletter-centered{
                 width: 75%;
@@ -744,6 +784,177 @@ $site_green: #41c457;
                         border: 0;
                         border-radius: 3px;
                         margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        .message-container{
+            display: flex;
+            justify-content: center;
+            padding: 7rem 0;
+
+            .message-centered{
+                width: 75%;
+                display: flex;
+
+                .message-left{
+                    width: 70%;
+                    
+                    .green{
+                        color: $site_green;
+                        margin-bottom: 1rem;
+                    }
+
+                    .message-title{
+                        display: flex;
+                        margin-bottom: 2rem;
+
+                        .title-left{
+                            color: $site_black;
+                        }
+
+                        .title-right{
+                            position: relative;
+
+                            .title-bg{
+                                background-color: $site_green;
+                                filter: opacity(0.3);
+                                height: 100%;
+                                width: 100%;
+                            }
+
+                            .absolute{
+                                position: absolute;
+                                top: 0;
+                                color: $site_green;
+                                padding-left: 0.5rem;
+                            }
+
+                            .hidden{
+                                visibility: hidden;
+                                padding: 0 0.5rem;
+                            }
+                        }
+                    }
+
+                    .message-text{
+                        
+                        p{
+                            color: $site_black;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    .message-form{
+
+                        form{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            input{
+                                width: 49%;
+                                padding: 0.5rem;
+                                background-color: #e3e7df;
+                                border: 0;
+                                margin-bottom: 1rem;
+                                border-radius: 3px;
+                            }
+
+                            .iconed{
+                                position: relative;
+                                width: 49%;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 1rem;
+
+                                input{
+                                    width: 100%;
+                                    margin-bottom: 0;
+                                }
+
+                                img{
+                                    position: absolute;
+                                    right: 0;
+                                    padding: 0.25rem;
+                                }
+
+                                i{
+                                    position: absolute;
+                                    right: 2%;
+                                    align-self: center;
+                                    color: $site_black;
+                                    filter: opacity(0.5);
+                                }
+                            }
+
+                            .message{
+                                width: 100%;
+                                padding-bottom: 5rem;
+                            }
+                        }
+                    }
+                }
+
+                .message-right{
+                    width: 30%;
+                    padding-left: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3,p{
+                        color: $site_black;
+                        margin-bottom: 1rem;
+                    }
+
+                    .contacts-container{
+                        width: 100%;
+
+                        .contact{
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            margin-bottom: 1rem;
+
+                            p{
+                                margin-bottom: 0
+                            };
+
+                            .icon{
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 0.5rem;
+
+                                .icon-bg{
+                                    height: 50px;
+                                    width: 50px;
+                                    background-color: $site_green;
+                                    filter: opacity(0.3);
+                                    text-align: center;
+                                    line-height: 50px;
+                                    border-radius: 50%;
+                                    position: relative;
+                                }
+
+                                i{
+                                    color: $site_green;
+                                    z-index: 2;
+                                    position: absolute;
+                                }
+                            }    
+                        }
+                    }
+
+                    .btn{
+                        background-color: transparent;
+                        border: 2px solid $site_green;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+                        color: $site_green;
                     }
                 }
             }

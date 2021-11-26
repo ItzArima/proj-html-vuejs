@@ -8,7 +8,8 @@
                 </div>
                 <div class="title-right">
                     <div class="title-bg"></div>
-                    <h1>Services</h1>
+                    <h1 class="hidden">Services</h1>
+                    <h1 class="absolute">Services</h1>
                 </div>
             </div>
             <div class="business-text">
