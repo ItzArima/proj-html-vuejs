@@ -4,6 +4,7 @@
         <cards1 />
         <aboutNetwork />
         <businessArea />
+        <pricing />
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import hero from './hero.vue'
 import cards1 from './cards-1.vue'
 import aboutNetwork from './aboutNetwork.vue'
 import businessArea from './businessArea.vue'
+import Pricing from './pricing.vue'
 export default {
     name: "siteMain",
 
@@ -19,7 +21,8 @@ export default {
         hero,
         cards1,
         aboutNetwork,
-        businessArea
+        businessArea,
+        Pricing
     }
 };
 </script>
