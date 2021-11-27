@@ -38,91 +38,91 @@
                         <button class="btn">GET IN TOUCH</button>
                     </div>           
                 </div>
-                <div class="footer-col">
+                <div class="footer-col effect">
                     <div class="col-title"> 
                         <h2>About</h2>
                     </div>    
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>The Company</p>
+                        <a href="#">The Company</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Institutional</p>
+                        <a href="#">Institutional</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Social & Events</p>
+                        <a href="#">Social & Events</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Innovation</p>
+                        <a href="#">Innovation</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Environment</p>
+                        <a href="#">Environment</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Technology</p>
+                        <a href="#">Technology</a>
                     </div>                 
                 </div>
-                <div class="footer-col">
+                <div class="footer-col effect">
                     <div class="col-title"> 
                         <h2>Services</h2>
                     </div>    
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Audit & Assurance</p>
+                        <a href="#">Audit & Assurance</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Financial Advisory</p>
+                        <a href="#">Financial Advisory</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Analytics M&A</p>
+                        <a href="#">Analytics M&A</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Middle Marketing</p>
+                        <a href="#">Middle Marketing</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Legal Consulting</p>
+                        <a href="#">Legal Consulting</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Regulatory Risk</p>
+                        <a href="#">Regulatory Risk</a>
                     </div> 
                 </div>
-                <div class="footer-col">
+                <div class="footer-col effect">
                     <div class="col-title"> 
                         <h2>Support</h2>
                     </div>    
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Responsability</p>
+                        <a href="#">Responsability</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Terms of Use</p>
+                        <a href="#">Terms of Use</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>About Cookies</p>
+                        <a href="#">About Cookies</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Privacy Policy</p>
+                        <a href="#">Privacy Policy</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Accessibility</p>
+                        <a href="#">Accessibility</a>
                     </div>
                     <div class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <p>Information</p>
+                        <a href="#">Information</a>
                     </div> 
                 </div>
             </div>

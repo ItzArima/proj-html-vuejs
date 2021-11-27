@@ -17,6 +17,10 @@ h1,h2,h3,h4{
     font-family: 'Poppins', sans-serif;
 }
 
+.title-bg{
+    border-radius: 3px;
+}
+
 #app{
 
     .header-container{
@@ -76,7 +80,7 @@ h1,h2,h3,h4{
             font-weight: 900;
             background-color: transparent;
             font-size: medium;
-            color: #e3e7df; 
+            color: white; 
             padding: 0.5rem 1rem;  
             border-radius: 3px;
             background-color: $site_green;
@@ -269,6 +273,9 @@ h1,h2,h3,h4{
                     padding: 2rem;
                     margin: 0 0.5rem;
                     border-radius: 5px;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.3s;
 
                     h2{
                         margin: 1.5rem 0;
@@ -294,7 +301,11 @@ h1,h2,h3,h4{
                             color: $site_green;
                             padding: 1rem;
                         }
-                    }    
+                    } 
+                    
+                    &:hover{
+                        top: -10px;
+                    }
                 }
             }
         }
@@ -455,6 +466,10 @@ h1,h2,h3,h4{
                         background-color: transparent;
                         border: 2px solid $site_green;
                         border-radius: 3px;
+
+                        &:hover{
+                            background-color: $site_green;
+                        }
                     }
                 }
 
@@ -476,10 +491,14 @@ h1,h2,h3,h4{
                             background-color: #1e2223;
                             padding: 3rem;
                             border-radius: 7px;
+                            position: relative;
+                            transition: all 0.3s;
+                            top: 0;
 
                             i{
                                 color: $site_green;
                                 margin-bottom: 1.5rem;
+                                transition: all 0.5s;
                             }
 
                             h2{
@@ -496,6 +515,14 @@ h1,h2,h3,h4{
 
                                 &:hover{
                                     background-color: $site_green;
+                                }
+                            }
+
+                            &:hover{
+                                top: -10px;
+
+                                i{
+                                    color: #e3e7df;
                                 }
                             }
                         }
@@ -520,6 +547,7 @@ h1,h2,h3,h4{
                 .pricing-content{
                     text-align: center;
                     width: 75%;
+                    margin-bottom: 1rem;
 
                     .green{
                         color: $site_green;
@@ -580,6 +608,8 @@ h1,h2,h3,h4{
                         align-items: center;
                         border-radius: 10px;
                         transition: all 0.3s;
+                        position: relative;
+                        top: 0;
 
 
                         i{
@@ -626,7 +656,7 @@ h1,h2,h3,h4{
                         } 
                         
                         &:hover{
-                            transform: scale(1,1.05);
+                            top: -10px;
                         }
                     }
 
@@ -645,6 +675,20 @@ h1,h2,h3,h4{
                             border-bottom-right-radius: 30px;
                             font-weight: 900;
                             color: white;
+                        }
+
+                        .bigger-background{
+                            position: absolute;
+                            height: 110%;
+                            width: 100%;
+                            padding: 4rem;
+                            top: -5%;
+                            background-color: white;
+                            border-radius: 10px;
+                        }
+
+                        .card-content   {
+                            z-index: 2;
                         }
                     }
                 }
@@ -707,33 +751,126 @@ h1,h2,h3,h4{
                 }
 
                 .news-cards{
-                    display: flex;
                     width: 100%;
+                    height: 420px;
+                    display: flex;
+                    
 
                     .card{
                         width: calc(100% / 3);
-                        position: relative;
+                        height: 100%;
+                        overflow: hidden;
+                        position: relative; 
                         display: flex;
                         justify-content: center;
+                        border-radius: 10px;
 
-
-                        img{
+                        .card-child{
+                            background-size: cover;
+                            height: 100%;
                             width: 100%;
-                            filter: brightness(0.5);
-                            border-radius: 7px;
+                            display: flex;
+                            align-items: center;
+                            filter: brightness(0.4);
+                            transition: all 0.3s;
+                            transform: none;
+
                         }
-                        
+
+                        .blurred-bg{
+                            backdrop-filter: blur(0);
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            top: 0;
+                            transition: all 0.3s;
+                        }
+
+                        .bg-1{
+                            background-image: url('./assets/img/news-1.jpg');
+                        }
+
+                        .bg-2{
+                            background-image: url('./assets/img/news-2.jpg');
+                        }
+
+                        .bg-3{
+                            background-image: url('./assets/img/news-3.jpg');
+                        }
+
                         h3{
                             position: absolute;
                             bottom: 10%;
+                            padding: 0 1.5rem;
                             text-align: center;
-                            width: 75%;
-                            z-index: 2;
+                            transition: all 0.3s;
+                        }
+
+                        .bottom{
+                            bottom: 0;
+                            transition: all 0.3s;
+                            position: absolute;
+                            opacity: 0;
+                            transition: all 0.3s;
+                            padding: 0 2rem;
+                            text-align: center;
+                        }
+
+                        .top{
+                            top: 0;
+                            transition: all 0.3s;
+                            position: absolute;
+                            display: flex;
+                            justify-content: space-around;
+                            width: 100%;
+                            padding: 0 1.5rem;
+                            opacity: 0;
+
+                            .date, .user{
+                                display: flex;
+                                align-items: center;
+
+                                i{
+                                    margin-right: 0.5rem;
+                                }
+                            }
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                        
+                            .card-child{
+                                transform: scale(1.3);
+                                filter: brightness(0.4);
+                                box-shadow: 0;
+                                margin: -10px;
+                            }
+
+                            .blurred-bg{
+                                backdrop-filter: blur(3px);
+                            }
+
+                            h3{
+                                bottom: 20%;
+                            }
+
+                            .bottom{
+                                bottom: 10%;
+                                opacity: 1;
+                            }
+
+                            .top{
+                                top: 10%;
+                                opacity: 1;
+                            }
+
                         }
                     }
                     
                     .middle{
                         margin: 0 1.5rem;
+                        display: flex;
+                        justify-content: center;
                     }
                 }
             }
@@ -972,6 +1109,11 @@ h1,h2,h3,h4{
                         border-radius: 5px;
                         margin-top: 1rem;
                         color: $site_green;
+
+                        &:hover{
+                            background-color: $site_green;
+                            color: white;
+                        }
                     }
                 }
             }
@@ -1012,6 +1154,7 @@ h1,h2,h3,h4{
             
                         &:hover{
                             cursor: pointer;
+                            background-color: $site_green;
                         }
                     }
 
@@ -1062,6 +1205,11 @@ h1,h2,h3,h4{
                                 align-items: center;
                                 justify-content: center;
                             }
+
+                            &:hover{
+                                color: $site_green;
+                                cursor: pointer;
+                            }
                         }
                     }
 
@@ -1077,6 +1225,15 @@ h1,h2,h3,h4{
                         i{
                             margin-right: 0.5rem;
                         }
+
+                        &:hover{
+                            color: $site_green;
+                            cursor: pointer;
+
+                            a{
+                                color: $site_green;
+                            }
+                        }
                     }
                 }
 
@@ -1087,6 +1244,21 @@ h1,h2,h3,h4{
 
                 .footer-col:last-of-type{
                     margin-right: 0;
+                }
+
+                .effect{
+                    position: relative;
+                    top: 0;
+                    transition: all 0.3s;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    &:hover{
+                        top: -10px;
+                    }
                 }
             }
         }

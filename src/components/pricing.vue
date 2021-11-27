@@ -52,39 +52,42 @@
                     </div>
                 </div>
                 <div class="card popular">
-                    <div class="most-popular">
-                        <p>Most</p>
-                        <p>Popular</p>
-                    </div>
-                    <i class="fas fa-briefcase fa-2x"></i>
-                    <h3>Professional</h3>
-                    <div class="price">
-                        <p>$</p>
-                        <h2>890</h2>
-                        <p>/ MO</p>
-                    </div>
-                    <div class="features">
-                        <div class="feature">
-                            <p>Standard Accounting</p>
-                            <i class="fas fa-check"></i>
+                    <div class="bigger-background"></div>
+                    <div class="card-content">
+                        <div class="most-popular">
+                            <p>Most</p>
+                            <p>Popular</p>
                         </div>
-                        <div class="feature">
-                            <p>Platform Access</p>
-                            <i class="fas fa-check"></i>
+                        <i class="fas fa-briefcase fa-2x"></i>
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <p>$</p>
+                            <h2>890</h2>
+                            <p>/ MO</p>
                         </div>
-                        <div class="feature">
-                            <p>Business Orientation</p>
-                            <i class="fas fa-check"></i>
+                        <div class="features">
+                            <div class="feature">
+                                <p>Standard Accounting</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature">
+                                <p>Platform Access</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature">
+                                <p>Business Orientation</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature">
+                                <p>Dedicated Consultant</p>
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div class="feature">
+                                <p>Personal Assistance</p>
+                                <i class="fas fa-times"></i>
+                            </div>
                         </div>
-                        <div class="feature">
-                            <p>Dedicated Consultant</p>
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <div class="feature">
-                            <p>Personal Assistance</p>
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
+                    </div>    
                 </div>
                 <div class="card">
                     <i class="far fa-gem fa-2x"></i>
