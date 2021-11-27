@@ -13,12 +13,12 @@
         </div>
       </div>
       <div class="nav-right">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="">SERVICES</a>
-        <a href="">PRICING</a>
-        <a href="">BLOG</a>
-        <button class="btn">GET IN TOUCH</button>
+        <a id="home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#pricing">PRICING</a>
+        <a href="#blog">BLOG</a>
+        <a href="#touch" class="btn">GET IN TOUCH</a>
       </div>
     </div>
   </div>
@@ -34,10 +34,16 @@ export default {
     },
     mounted() {
         window.addEventListener('scroll', this.updateScroll);
+        let home = document.getElementById('home')
+        home.addEventListener('click',this.goTop);
     },
     methods: {
         updateScroll() {
             this.scrollPosition = window.scrollY
+        },
+        goTop() {
+          document.body.scrollTop = 0,
+          document.documentElement.scrollTop = 0
         }
     }   
 };

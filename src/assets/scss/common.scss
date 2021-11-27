@@ -1,12 +1,6 @@
 $site_black: #21333e;
 $site_green: #41c457;
 
-.nav_colored{
-    background-color: #208531 !important;
-}
-
-
-
 #nav{
     position: -webkit-sticky;
     position: sticky;
@@ -55,6 +49,7 @@ h1,h2,h3,h4{
 
                 .social-pages{
                     margin-right: 0;
+                    
                     i{
                         margin: 0 1rem;
                     }
@@ -90,6 +85,10 @@ h1,h2,h3,h4{
             &:hover{
                 cursor: pointer;
             }
+        }
+        
+        .nav_colored{
+            background-color: #208531 !important;
         }
 
         .stickyheader-container{
@@ -149,6 +148,17 @@ h1,h2,h3,h4{
                         color: #e3e7df;
                         padding: 0 1rem;
                         font-weight: 900;
+                    }
+
+                    .btn{
+                        padding: 0.5rem 1rem;
+                    }
+
+                    #home{
+
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -298,6 +308,7 @@ h1,h2,h3,h4{
 
                 .about-content{
                     width: 75%;
+                    
                     .green{
                         color: $site_green;
                         margin-bottom: 1rem;
@@ -404,6 +415,7 @@ h1,h2,h3,h4{
                     .title-right{
                         position: relative;
                         padding: 0 0.5rem;
+                        
                         .title-bg{
                             height: 100%;
                             width: 100%;
@@ -776,6 +788,7 @@ h1,h2,h3,h4{
                 .newsletter-right{
                     width: 50%;
                     margin-left: 1rem;
+                    
                     input{
                         width: 100%;
                         filter: opacity(0.5);
@@ -919,8 +932,8 @@ h1,h2,h3,h4{
                             margin-bottom: 1rem;
 
                             p{
-                                margin-bottom: 0
-                            };
+                                margin-bottom: 0;
+                            }
 
                             .icon{
                                 position: relative;

@@ -2,14 +2,14 @@
     <div class="main-container">
         <stickyHeader />
         <div class="site-content">
-            <hero />
+            <hero id="home"/>
             <cards1 />
-            <aboutNetwork />
-            <businessArea />
-            <pricing />
-            <news />
+            <aboutNetwork id="about"/>
+            <businessArea id="services"/>
+            <pricing id="pricing"/>
+            <news id="blog"/>
             <newsletter />
-            <message />
+            <message id="touch"/>
         </div>    
     </div>
 </template>
@@ -22,7 +22,7 @@ import businessArea from './businessArea.vue'
 import pricing from './pricing.vue'
 import news from './news.vue'
 import newsletter from './newsletter.vue'
-import message from './message.vue'
+import message from './sendMessage.vue'
 import stickyHeader from './stickyHeader.vue'
 
 export default {
