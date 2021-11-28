@@ -24,10 +24,16 @@
                         </div>
                         <input name="mail" type="email" placeholder="Email">
                         <input name="phone" type="text" placeholder="Phone">
-                        <div class="iconed">
-                            <input name="more" type="text" placeholder="More info">
-                            <i class="fas fa-angle-down"></i>
-                        </div>    
+                        <select name="selection" value="selection">
+                            <option value="">More Info</option>
+                            <option value="audit">Audit & Assurance</option>
+                            <option value="financial">Financial Advisory</option>
+                            <option value="analytics">Analytics M&A</option>
+                            <option value="marketing">Middle Marketing</option>
+                            <option value="consulting">Legal Consulting</option>
+                            <option value="risk">Regulatory Risk</option>
+                            <option value="other">Other</option>
+                        </select>   
                         <input class="message" name="message" type="text" placeholder="Message">
                         <button class="btn">SEND</button>
                     </form>
@@ -68,7 +74,13 @@
 
 <script>
 export default {
-    name : 'message'
+    name : 'message',
+
+    data() {
+        return{
+            selection:""
+        }
+    }
 }
 </script>
 
@@ -139,7 +151,7 @@ export default {
                     flex-wrap: wrap;
                     justify-content: space-between;
 
-                    input{
+                    input,select{
                         width: 49%;
                         padding: 0.5rem;
                         background-color: #e3e7df;
@@ -147,6 +159,7 @@ export default {
                         margin-bottom: 1rem;
                         border-radius: 3px;
                     }
+                      
 
                     .iconed{
                         position: relative;

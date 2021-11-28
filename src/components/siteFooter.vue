@@ -38,91 +38,13 @@
                         <button class="btn">GET IN TOUCH</button>
                     </div>           
                 </div>
-                <div class="footer-col effect">
+                <div v-for="element in footerElements" :key="element.title" class="footer-col effect">
                     <div class="col-title"> 
-                        <h2>About</h2>
+                        <h2>{{element.title}}</h2>
                     </div>    
-                    <div class="link-container">
+                    <div v-for="el in element.links" :key="el.link" class="link-container">
                         <i class="fas fa-angle-right"></i>
-                        <a href="#">The Company</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Institutional</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Social & Events</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Innovation</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Environment</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Technology</a>
-                    </div>                 
-                </div>
-                <div class="footer-col effect">
-                    <div class="col-title"> 
-                        <h2>Services</h2>
-                    </div>    
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Audit & Assurance</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Financial Advisory</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Analytics M&A</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Middle Marketing</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Legal Consulting</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Regulatory Risk</a>
-                    </div> 
-                </div>
-                <div class="footer-col effect">
-                    <div class="col-title"> 
-                        <h2>Support</h2>
-                    </div>    
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Responsability</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">About Cookies</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Accessibility</a>
-                    </div>
-                    <div class="link-container">
-                        <i class="fas fa-angle-right"></i>
-                        <a href="#">Information</a>
+                        <a href="#">{{el.name}}</a>
                     </div> 
                 </div>
             </div>
@@ -139,6 +61,10 @@
 <script>
 export default {
     name:'siteFooter',
+
+    props:{
+        footerElements: Array
+    }
 }
 </script>
 
@@ -166,19 +92,9 @@ export default {
                 border-radius: 15px;
                 
                 .btn{
-                    border: 2px solid $site_green;
-                    font-weight: 900;
                     background-color: transparent;
-                    font-size: medium;
-                    color: #e3e7df; 
-                    padding: 0.5rem 1rem;  
-                    border-radius: 3px;
-                    background-color: transparent;
-                    line-height: 100%;
-                    margin-top: 0.5rem;
-        
+
                     &:hover{
-                        cursor: pointer;
                         background-color: $site_green;
                     }
                 }

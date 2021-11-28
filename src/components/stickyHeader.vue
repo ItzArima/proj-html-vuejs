@@ -13,12 +13,7 @@
 			</div>
 		</div>
 		<div class="nav-right">
-			<a href="#">HOME</a>
-			<a id="scrollAbout">ABOUT</a>
-			<a id="scrollServices">SERVICES</a>
-			<a id="scrollPricing">PRICING</a>
-			<a id="scrollBlog">BLOG</a>
-			<a id="scrollTouch" class="btn">GET IN TOUCH</a>
+			<a v-for="element in headerElements" :key="element.id" :class="element.class" :id="element.id">{{element.name}}</a>
 		</div>
 		</div>
 	</div>
@@ -32,8 +27,13 @@ export default {
             scrollPosition: null
         }
     },
+	props:{
+		headerElements: Array
+	},
     mounted() {
         window.addEventListener('scroll', this.updateScroll);
+		let home = document.getElementById('scrollHome')
+		home.addEventListener('click', this.scrollHome)
         let about = document.getElementById('scrollAbout')
         about.addEventListener('click', this.scrollAbout)
         let services = document.getElementById('scrollServices')
@@ -49,6 +49,9 @@ export default {
         updateScroll() {
             this.scrollPosition = window.scrollY
         },
+		scrollHome(){
+			window.scrollTo(0, document.getElementById('home').offsetTop-100);
+		},
         scrollAbout(){
             window.scrollTo(0, document.getElementById('about').offsetTop-50);
         },

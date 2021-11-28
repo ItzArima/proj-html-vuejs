@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-        <stickyHeader />
+        <stickyHeader :headerElements="this.headerData"/>
         <div class="site-content">
             <hero id="home"/>
             <cards1 />
@@ -40,6 +40,42 @@ export default {
         stickyHeader
     },
 
+    data(){
+        return{
+            headerData : [
+                {
+                    name: 'HOME',
+                    id: 'scrollHome',
+                    class: 'link'
+                },
+                {
+                    name: 'ABOUT',
+                    id: 'scrollAbout',
+                    class: 'link'
+                },
+                {
+                    name: 'SERVICES',
+                    id: 'scrollServices',
+                    class: 'link'
+                },
+                {
+                    name: 'PRICING',
+                    id: 'scrollPricing',
+                    class: 'link'
+                },
+                {
+                    name: 'BLOG',
+                    id: 'scrollBlog',
+                    class: 'link'
+                },
+                {
+                    name: 'GET IN TOUCH',
+                    id: 'scrollTouch',
+                    class: 'btn'
+                }
+            ],           
+        }
+    }
 };
 </script>
 
