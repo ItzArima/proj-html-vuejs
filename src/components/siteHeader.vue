@@ -36,8 +36,8 @@ export default {
 .header-container{
     background-color: $site_green;
     color: #e3e7df;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
     display: flex;
     justify-content: center;
     

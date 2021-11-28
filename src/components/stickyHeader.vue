@@ -1,5 +1,5 @@
 <template>
-	<div class="stickyheader-container" :class="{nav_colored: scrollPosition > 200}">
+	<div class="stickyheader-container" :class="{nav_colored: scrollPosition > 50}">
 		<div class="nav-container">
 		<div class="nav-left">
 			<div class="logo-container">
@@ -140,7 +140,7 @@ export default {
 			}
 
 			.btn{
-				padding: 0.5rem 1rem;
+				padding: 0.75rem 1rem;
 				color: #e3e7df !important;
 			}
 		}
