@@ -30,6 +30,49 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.header-container{
+    background-color: $site_green;
+    color: #e3e7df;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    
+    .info-contacts-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+
+        .left-contacts{
+            display: flex;
+            align-items: center;
+        }
+
+        .right-contacts{
+            display: flex;
+
+            div{
+                display: flex;
+                align-items: center;
+                margin: 0 1rem;
+            }
+
+            .social-pages{
+                margin-right: 0;
+                
+                i{
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        i{
+            margin: 0 0.5rem;
+        }
+    }
+}
 </style>

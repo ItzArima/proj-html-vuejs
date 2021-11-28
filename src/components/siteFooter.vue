@@ -142,6 +142,170 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.footer-container{
+
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        background-color: $site_black;
+        color: white;
+        padding: 7rem 0;
+
+        .content-centered{
+            width: 75%;
+            display: flex;
+
+            .footer-col{
+                width: 25%;
+                margin: 0 0.75rem;
+                background-color: #30404c;
+                padding: 2rem;
+                border-radius: 15px;
+                
+                .btn{
+                    border: 2px solid $site_green;
+                    font-weight: 900;
+                    background-color: transparent;
+                    font-size: medium;
+                    color: #e3e7df; 
+                    padding: 0.5rem 1rem;  
+                    border-radius: 3px;
+                    background-color: transparent;
+                    line-height: 100%;
+                    margin-top: 0.5rem;
+        
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $site_green;
+                    }
+                }
+
+                .footer-title{
+                    display: flex;
+                    margin-bottom: 1rem;
+
+                    .title-left{
+                        position: relative;
+
+                        .title-bg{
+                            height: 100%;
+                            width: 100%;
+                            background-color: $site_green;
+                            border-top-left-radius: 25px;
+                            border-bottom-left-radius: 25px;
+                            filter: opacity(0.5);
+                        }
+
+                        .hidden{
+                            visibility: hidden;
+                            padding-left: 2rem;
+                        }
+
+                        .absolute{
+                            position: absolute;
+                            color: $site_green;
+                            top: 0;
+                            padding-left: 1.5rem;
+                        }
+                    }
+                }
+
+                .col-text{
+                    margin-bottom: 1rem;
+                }
+
+                .contacts-container{
+                    
+                    .contact{
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: 1rem;
+
+                        .icon{
+                            width: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        &:hover{
+                            color: $site_green;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .col-title{
+                    margin-bottom: 1rem;
+                }
+
+                .link-container{
+                    display: flex;
+                    margin-bottom: 1rem;
+                    align-items: center;
+
+                    i{
+                        margin-right: 0.5rem;
+                    }
+
+                    &:hover{
+                        color: $site_green;
+                        cursor: pointer;
+
+                        a{
+                            color: $site_green;
+                        }
+                    }
+                }
+            }
+
+            .footer-col:first-of-type{
+                margin-left: 0;
+                background-color: transparent;
+                padding-left: 0;
+            }
+
+            .footer-col:last-of-type{
+                margin-right: 0;
+            }
+
+            .effect{
+                position: relative;
+                top: 0;
+                transition: all 0.3s;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover{
+                    top: -10px;
+                }
+            }
+        }
+    }
+
+    .footer-privacy{
+        display: flex;
+        justify-content: center;
+        background-color: #25262e;
+        padding: 1rem 0;
+        color: white;
+
+        .privacy-centered{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+
+            em{
+                font-style: normal;
+                color: $site_green;
+            }
+        }
+    }
+}
 </style>

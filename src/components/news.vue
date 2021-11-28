@@ -77,6 +77,187 @@ name : 'news'
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.news-container{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+
+    .news-centered{
+        width: 75%;
+
+        .green{
+            color: $site_green;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-title{
+            display: flex;
+            margin-bottom: 1rem;
+
+            .title-left{
+                color: #1e2223;
+            }
+
+            .title-right{
+                position: relative;
+
+                .title-bg{
+                    height: 100%;
+                    width: 100%;
+                    background-color: $site_green;
+                    filter: opacity(0.3);
+                }
+
+                .absolute{
+                    position: absolute;
+                    top: 0;
+                    color: $site_green;
+                    padding-left: 0.5rem;
+                }
+
+                .hidden{
+                    visibility: hidden;
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+
+        .news-text{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+
+            p{
+                color: #1e2223;
+            }
+        }
+
+        .news-cards{
+            width: 100%;
+            height: 420px;
+            display: flex;
+            
+
+            .card{
+                width: calc(100% / 3);
+                height: 100%;
+                overflow: hidden;
+                position: relative; 
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+
+                .card-child{
+                    background-size: cover;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    filter: brightness(0.4);
+                    transition: all 0.3s;
+                    transform: none;
+
+                }
+
+                .blurred-bg{
+                    backdrop-filter: blur(0);
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    transition: all 0.3s;
+                }
+
+                .bg-1{
+                    background-image: url('../assets/img/news-1.jpg');
+                }
+
+                .bg-2{
+                    background-image: url('../assets/img/news-2.jpg');
+                }
+
+                .bg-3{
+                    background-image: url('../assets/img/news-3.jpg');
+                }
+
+                h3{
+                    position: absolute;
+                    bottom: 10%;
+                    padding: 0 1.5rem;
+                    text-align: center;
+                    transition: all 0.3s;
+                }
+
+                .bottom{
+                    bottom: 0;
+                    transition: all 0.3s;
+                    position: absolute;
+                    opacity: 0;
+                    transition: all 0.3s;
+                    padding: 0 2rem;
+                    text-align: center;
+                }
+
+                .top{
+                    top: 0;
+                    transition: all 0.3s;
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding: 0 1.5rem;
+                    opacity: 0;
+
+                    .date, .user{
+                        display: flex;
+                        align-items: center;
+
+                        i{
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+
+                &:hover{
+                    cursor: pointer;
+                
+                    .card-child{
+                        transform: scale(1.3);
+                        filter: brightness(0.4);
+                        box-shadow: 0;
+                        margin: -10px;
+                    }
+
+                    .blurred-bg{
+                        backdrop-filter: blur(3px);
+                    }
+
+                    h3{
+                        bottom: 20%;
+                    }
+
+                    .bottom{
+                        bottom: 10%;
+                        opacity: 1;
+                    }
+
+                    .top{
+                        top: 10%;
+                        opacity: 1;
+                    }
+
+                }
+            }
+            
+            .middle{
+                margin: 0 1.5rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
 </style>

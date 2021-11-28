@@ -65,6 +65,101 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.about-container{
+    display: flex;
+    position: relative;
+
+    .about-left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        padding: 5rem 0;
+
+        .about-content{
+            width: 75%;
+            
+            .green{
+                color: $site_green;
+                margin-bottom: 1rem;
+            }
+
+            .about-title{
+                display: flex;
+                margin-bottom: 1rem;
+
+                .title-left{
+                    position: relative;
+                    color: $site_green;
+
+                    .title-bg{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        background-color: $site_green;
+                        filter: opacity(0.3);
+                        border-radius: 3px;
+                    }
+                    
+                    h1{
+                        padding: 0 0.5rem;
+                    }
+                }
+
+                .title-right{
+                    color: #1e2223;
+                }
+            }
+            
+            .about-text{
+                color: #778a94;
+                margin-bottom: 3rem;
+            }
+
+            .about-cards{
+                color: #778a94;
+
+                .row{
+                    display: flex;
+                    margin-bottom: 2rem;
+
+                    .card{
+                        width: 50%;
+                        padding-right: 1rem 0;
+
+                        .card-title{
+                            display: flex;
+                            align-items: center;
+
+                            h2{
+                                margin-left: 0.5rem;
+                                color: #1e2223;
+                            }
+                        }
+
+                        i{
+                            color: $site_green;
+                        }
+
+                        p{
+                            margin: 2rem 0
+                        };
+                    }
+                }
+
+            }
+        }
+    }
+
+    .about-right{
+        width: 50%;
+        background-image: url('../assets/img/about-3.jpg');
+        background-position: center;
+        padding: 5rem 0;
+        background-size: cover;
+    }
+}
 </style>

@@ -33,6 +33,92 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.hero-container{
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .hero-video{
+        position: absolute;
+        filter: brightness(0.4);
+        height: 100%;
+        width: 100%;
+        
+        video{
+            object-fit: cover;
+            object-position: bottom;
+            max-height: 100%;
+            min-width: 100%
+        }
+    }
+
+    .hero-content{
+        position: absolute;
+        top: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+        max-width: 60%;
+        height: 30%;
+
+        .title{
+            display: flex;
+            position: relative;
+            color: #ffffff;
+            font-weight: 900;
+            font-size: xx-large;
+            
+            .space{
+                margin-left:1rem;
+                margin-right: 0.5rem;
+            }
+
+            .customer-container{
+                position: relative;
+                h1{
+                    padding: 0 0.5rem;
+                }
+
+                .customer-bg{
+                    position: absolute;
+                    background-color: $site_green;
+                    height: 100%;
+                    width: 100%;
+                    filter: opacity(0.1);
+                    text-align: center;
+                }
+            }
+        }
+
+        .text{
+            text-align: center;
+            color: #a2adae;
+            margin-top: 2rem;
+            font-size: x-large;
+        }
+
+        .hero-buttons-container{
+            height: 50px;
+            margin-top: 2rem;
+
+            .btn{
+                margin: 0 1rem;
+            }
+
+            .border{
+                border: 2px solid $site_green !important;
+                background-color: transparent !important;
+
+                &:hover{
+                    background-color: $site_green !important;
+                }
+            }
+        }
+    }
+}
 </style>

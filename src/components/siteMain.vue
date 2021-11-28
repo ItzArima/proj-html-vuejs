@@ -43,3 +43,16 @@ export default {
 };
 </script>
 
+<style lang="scss">
+@import '../assets/scss/common.scss';
+
+.main-container{
+    color: #e3e7df;
+    position: relative;
+
+    .site-content{
+        position: relative;
+        top: -82px;
+    }        
+}
+</style>

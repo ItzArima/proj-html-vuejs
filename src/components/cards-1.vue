@@ -35,6 +35,60 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/scss/common.scss';
 
+.cards-1-container{
+    background-color: #e3e7df;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 3rem 0;
+    
+    .cards-centered{
+        width: 75%;
+        display: flex;
+
+        .card{
+            background-color: #ffffff;
+            width: calc(100% / 3);
+            padding: 2rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            position: relative;
+            top: 0;
+            transition: all 0.3s;
+
+            h2{
+                margin: 1.5rem 0;
+            }
+
+            .card-icon{
+                position: relative;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                line-height: 70px;
+
+                .icon-bg{
+                    background-color: $site_green;
+                    filter: opacity(0.5);
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+
+                i{
+                    color: $site_green;
+                    padding: 1rem;
+                }
+            } 
+            
+            &:hover{
+                top: -10px;
+            }
+        }
+    }
+}
 </style>
