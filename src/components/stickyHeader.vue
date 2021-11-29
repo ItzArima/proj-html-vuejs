@@ -50,22 +50,22 @@ export default {
             this.scrollPosition = window.scrollY
         },
 		scrollHome(){
-			window.scrollTo(0, document.getElementById('home').offsetTop-100);
+			window.scrollTo(0, document.getElementById('home').offsetTop-0);
 		},
         scrollAbout(){
-            window.scrollTo(0, document.getElementById('about').offsetTop-50);
+            window.scrollTo(0, document.getElementById('about').offsetTop-30);
         },
         scrollServices(){
-            window.scrollTo(0, document.getElementById('services').offsetTop-50);
+            window.scrollTo(0, document.getElementById('services').offsetTop-30);
         },
         scrollPricing(){
-            window.scrollTo(0, document.getElementById('pricing').offsetTop-50);
+            window.scrollTo(0, document.getElementById('pricing').offsetTop-30);
         },
         scrollBlog(){
-            window.scrollTo(0, document.getElementById('blog').offsetTop-50);
+            window.scrollTo(0, document.getElementById('blog').offsetTop-30);
         },
         scrollTouch(){
-            window.scrollTo(0, document.getElementById('touch').offsetTop-50);
+            window.scrollTo(0, document.getElementById('touch').offsetTop-30);
         }
     }   
 };
