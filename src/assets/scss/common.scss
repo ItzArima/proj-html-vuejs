@@ -1,6 +1,13 @@
 $site_black: #21333e;
 $site_green: #41c457;
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,12 +15,6 @@ html{
 #nav{
     position: sticky;
     top: 0;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 h1,h2,h3,h4{
