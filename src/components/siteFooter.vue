@@ -52,7 +52,10 @@
         <div class="footer-privacy">
             <div class="privacy-centered">
                 <p>Enjoy the low price. We are tracking any intention of piracy.</p>
-                <p>© 2020 NEXGEN is Proudly powered by <em>Codings</em></p>
+                <div class="privacy-right">
+                    <p>© 2020 NEXGEN is Proudly powered by&nbsp;</p>
+                    <a href="#">Codings</a>
+                </div>
             </div>
         </div>
     </div>
@@ -217,9 +220,17 @@ export default {
             display: flex;
             justify-content: space-between;
 
-            em{
-                font-style: normal;
-                color: $site_green;
+            .privacy-right{
+                display: flex;
+
+                a{
+                    color: $site_green;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
@@ -228,6 +239,12 @@ export default {
 @media screen and (max-width: 1215px) {
     .content-centered, .privacy-centered{
         width: 95% !important;
+
+        .footer-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 }
 </style>

@@ -52,8 +52,8 @@ export default {
         video{
             object-fit: cover;
             object-position: bottom;
-            max-height: 100%;
-            min-width: 100%
+            height: 100vh;
+            width: 100vw;
         }
     }
 
@@ -125,11 +125,6 @@ export default {
 }
 
 @media screen and (max-width: 1215px) {
-    video{
-        height: 100vh;
-        width: 100vw !important;
-    }
-
     .hero-content{
         width: 100% !important;
     }
