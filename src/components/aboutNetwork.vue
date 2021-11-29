@@ -162,4 +162,10 @@ export default {
         background-size: cover;
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .about-content{
+        width: 97.5% !important;
+    }
+}
 </style>

@@ -197,4 +197,16 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .business-centered{
+        width: 95% !important;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
 </style>

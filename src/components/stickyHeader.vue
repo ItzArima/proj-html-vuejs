@@ -145,8 +145,15 @@ export default {
 			.btn{
 				padding: 0.75rem 1rem;
 				color: #e3e7df !important;
+				text-align: center;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1215px) {
+    .nav-container{
+		width: 95% !important;
 	}
 }
 </style>

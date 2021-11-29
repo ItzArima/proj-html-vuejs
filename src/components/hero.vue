@@ -41,6 +41,7 @@ export default {
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
     .hero-video{
         position: absolute;
@@ -63,7 +64,7 @@ export default {
         flex-direction: column;
         align-items: center;
         font-size: large;
-        max-width: 60%;
+        width: 60%;
         height: 30%;
 
         .title{
@@ -120,6 +121,17 @@ export default {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    video{
+        height: 100vh;
+        width: 100vw !important;
+    }
+
+    .hero-content{
+        width: 100% !important;
     }
 }
 </style>

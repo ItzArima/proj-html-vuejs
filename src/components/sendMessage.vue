@@ -262,4 +262,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .message-centered{
+        width: 95% !important;
+    }
+}
 </style>

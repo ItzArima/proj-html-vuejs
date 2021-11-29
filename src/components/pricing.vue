@@ -354,4 +354,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .pricing-centered{
+        width: 95% !important;
+    }
+}
 </style>

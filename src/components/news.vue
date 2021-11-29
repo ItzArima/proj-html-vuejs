@@ -261,4 +261,28 @@ name : 'news'
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .news-centered{
+        width: 95% !important;
+
+        .news-cards{
+            height: 300px !important;
+
+            h3{
+                font-weight: 100 !important;
+                font-size: medium;
+
+                
+            }
+
+            .card:hover{
+
+                h3{
+                    bottom: 25% !important;
+                }
+            }
+        }
+    }
+}
 </style>

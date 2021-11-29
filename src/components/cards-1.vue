@@ -91,4 +91,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .cards-centered{
+        width: 95% !important;
+    }
+}
 </style>

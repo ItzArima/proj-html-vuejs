@@ -224,4 +224,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1215px) {
+    .content-centered, .privacy-centered{
+        width: 95% !important;
+    }
+}
 </style>
