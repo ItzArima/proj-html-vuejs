@@ -100,6 +100,7 @@ export default {
             color: #a2adae;
             margin-top: 2rem;
             font-size: x-large;
+            font-weight: 900;
         }
 
         .hero-buttons-container{

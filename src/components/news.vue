@@ -148,7 +148,8 @@ name : 'news'
                 position: relative; 
                 display: flex;
                 justify-content: center;
-                border-radius: 10px;
+                border-radius: 30px;
+                background-position: center;
 
                 .card-child{
                     background-size: cover;
